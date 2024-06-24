@@ -27,11 +27,6 @@ app.use('/categories', categoriesRouters)
 app.use('/order', orderRouters)
 app.use('/webhook', stripeRouters)
 
-//front end routes
-app.get('*', (req, res) => {
-  res.send(`https://ecommerce-amber-ten-52.vercel.app/`)
-})
-
 app.listen(port, () => {
   console.log(`Server running at http://localhost:${port}`)
 })
